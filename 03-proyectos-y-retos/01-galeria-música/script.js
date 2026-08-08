@@ -62,5 +62,5 @@ listaCanciones.forEach(cancion => {
   fragment.appendChild(copyTemplate)
 })
 
+// Insertamos el fragmento al container-music
 $containerMusica.appendChild(fragment)
-
