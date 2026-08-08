@@ -1,6 +1,6 @@
 // Datos de los contenedores con los temazos
 
-const musica = [
+const listaCanciones = [
   {
     name: "Boys Dont Cry",
     author: "The Cure",
@@ -44,20 +44,21 @@ const $containerMusica = document.getElementById("container-music");
 const $template = document.getElementById("template-music").content;
 const fragment = document.createDocumentFragment();
 
-musica.forEach(musica => {
-  // Modificamos los elementos del template en base al array
-  $template.querySelector("div").classList.add("card")
-  $template.querySelector("img").setAttribute("src", musica.pathImg);
-
-  $template.querySelector("img").classList.add("portada");
-
-  $template.querySelector("h3").textContent = musica.name;
-
-  $template.querySelector("#card").style.backgroundColor = "#fff"
-
-  $template.querySelector("h4").textContent = musica.author;
+listaCanciones.forEach(cancion => {
   //Creamos la copia del template la vamos a insertar en el fragmento
   const copyTemplate = document.importNode($template, true)
+
+  // Añadimos los enlaces a cada cancion
+  copyTemplate.querySelector("a").setAttribute("href", cancion.link)
+  copyTemplate.querySelector("a").setAttribute("target", "_blank")
+
+  // Información de la cancion (ficha técnica)
+  copyTemplate.querySelector("h3").textContent = cancion.name;
+  copyTemplate.querySelector("h5").textContent = cancion.author;
+
+  copyTemplate.querySelector(".card").style.backgroundImage = `url(${cancion.pathImg})`
+
+  // Insertamos la copia del template al fragmento
   fragment.appendChild(copyTemplate)
 })
 

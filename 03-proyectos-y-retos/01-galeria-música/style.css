@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121312;
+  font-family: "Montserrat";
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  background-color: #856334;
+  margin-bottom: 4rem;
+}
+
+/*Estilos del contenedor principal de las canciones*/
+#container-music {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Estilos generales de las tarjetas de las canciones*/
+.card {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  background-repeat: no-repeat;
+  /*Evita que al poner el fondo en en JS este se repita*/
+  background-size: cover;
+  /*Hace que la foto de fondo abarque todo el contenedor*/
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/*Quitar el margin a los headers dela ficha técnica*/
+.info-music h3,
+.info-music h5 {
+  margin: 0;
+}
+
+/*Propiedades para la viñeta de las tarjetas de las canciones una vez inyectadas en el container-music*/
+.info-music {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  backdrop-filter: blur(1px);
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: .5s ease all;
+}
+
+/*Efecto hover para que la viñeta aparezca*/
+.info-music:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #856334;
+  padding: 5px;
+  margin-top: 4rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
