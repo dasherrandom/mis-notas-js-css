@@ -33,7 +33,7 @@
       <li><a href="#">Seccion #2</a></li>
       <li><a href="#">Seccion #3</a></li>
       <li><a href="#">Seccion #4</a></li>
-      <li><a href="#">Seccion #5</a></li> 
+       <li><a href="#">Seccion #5</a></li> 
     </ul>
   </nav>
   <input type="text" name="nombre" placeholder="Nombre">
@@ -52,6 +52,17 @@
       <figcaption>Animals 2</figcaption>  
     </figure> 
   </section>
+  <br><br>
+  <!--Esto es una función JS que se ejecuta al ejecutarse el evento click en el botón-->
+  <button onclick="alert(`Hola, esto es un manejador de eventos desde un atributo onclick`)">Event Handler como atributo</button>
+  <br><br>
+  <button id="evento-semantico">Botón semántico</button>
+  <br><br>
+  <button id="evento-listener">Botón + addEventListener</button>
+  <br><br>
+  <button id="evento-parametros">Botón que acepta Parámetros en los eventos</button>
+  <br><br>
+  <button id="evento-remove">Eliminar Evento</button>
   <template id="jojos-template">
     <figure>
       <img>
@@ -60,39 +71,6 @@
   </template>
 </body>
 <script>
-  // --> JSON.parse() -> Su parámetro string lo vuelve un tipo de dato de JS dependiendo de su sintaxis o valor: Objeto {}, Array [], boolenado (true o false), String "", Números y Nulos (null)
-// --> JSON.stringify() -> Vuelve un objeto a JSON
-
-// -------------- Web API -----------------
-// Interfaz de programación de aplicacion (herramientas incorporadas del navegador)
-// -> Eventos 
-// -> Formularios
-// -> AJAX y Fetch 
-// -> Historial 
-// -> Almacenamiento web 
-// -> Geolocacion 
-// -> Arrastrar y soltar 
-// -> Canvas 
-// -> Base de datos indexadas
-
-// ------------------- DOM -----------------------
-// console.log("-------------- DOM -----------------")
-// console.log(window)
-// console.log(document)
-// console.log(document.head)
-// console.log(document.documentElement)
-// console.log(document.doctype)
-// console.log(document.charset)
-// console.log(document.title)
-// console.log(document.links) // -> Colección de enlaces del documento
-// console.log(document.images) // -> Colección de imágenes del documento
-// console.log(document.forms) // -> Colección de formularios del documento
-// console.log(document.styleSheets) // -> Colección de hojas de estilos del documento
-// console.log(document.scripts) // -> Colección de scripts JS
-// setTimeout(()=>{
-//  console.log(document.getSelection().toString())
-// }, 2000)
-// console.log(document.write("<h2>Hola Mundo</h2>"))
 </script>
 <script src="script.js"></script>
 </html>

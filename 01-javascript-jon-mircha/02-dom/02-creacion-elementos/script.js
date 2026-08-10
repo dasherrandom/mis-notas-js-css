@@ -94,4 +94,58 @@ jojos.forEach(jojo => {
 })
 
 // Añadimos el fragmento con todas las etiquetas figure en el body.
+
 document.body.appendChild($fragment2)
+
+// --------------------------------------------------------------
+
+// Clase #3 - Crear elementos (Old Style)
+
+$newCard = document.createElement("figure")
+$newCard.innerHTML = `
+  <img src="https://picsum.photos/seed/picsum/400/400">
+  <figcaption>Ambiente</figcaption>
+`
+$newCard.classList.add("card")
+
+// El método replace reemplaza un elemento hijo por otro.
+// $cards.replaceChild($newCard, $cards.children[2])
+
+// El método insertBefore toma como referencia un hijo del elemento padre y posiciona el nuevo elemento antes de este.
+$cards.insertBefore($newCard, $cards.firstElementChild)
+
+// El método removeChild elimina un elemento hijo del elemento padre.
+$cards.removeChild($cards.lastElementChild)
+
+// El método cloneNode clona el nodo correspondiente. Usa el parámetro true para validar si se desea clonar el contenido o no.
+const $cloneCard = $cards.cloneNode(true)
+document.body.appendChild($cloneCard)
+
+// ----------------------------------------------------------------------
+
+// Clase #4 - Crear elementos (Cool Style)
+
+const $newCard2 = document.createElement("figure")
+const contentHTML = `
+  <img src="https://picsum.photos/seed/picsum/200/300">
+  <figcaption></figcaption>
+`
+$newCard2.classList.add("card")
+
+// Existen los métodos insertAdjacent... que permiten insertar distinto elementos en 4 posibles posiciones:
+// Tipos de elementos: Texto (insertAdjacentText), Elemento (insertAdjacentElement), HTML (insertAdjacentHTML)
+// Posiciones:
+// -> beforebegin (Como hermano anterior)
+// -> afterbegin (Como primer hijo)
+// -> beforeend (Como último hijo)
+// -> afterend (Como hermano siguiente)
+
+// Inserta a $newCard2 un nuevo elemento HTML como primer hijo.
+$newCard2.insertAdjacentHTML("afterbegin", contentHTML)
+
+// Inserta al figcaption de $newCard2 un texto como primer hijo.
+$newCard2.querySelector("figcaption").insertAdjacentText("afterbegin", "Paisaje 200x300")
+
+// Inserta a $cards un nuevo elemento ($newCard2) como primer hijo. 
+$cards.insertAdjacentElement("afterbegin", $newCard2)
+
