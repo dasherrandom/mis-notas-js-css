@@ -32,7 +32,7 @@ Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web 
 ## Estructura del Repositorio
 
 ```
-```mis-notas-js-css/
+mis-notas-js-css/
 ├── 01-curso-js-mircha/
 │   ├── 01-fundamentos-basicos/
 │   ├── 02-dom-manipulation/
