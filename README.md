@@ -31,7 +31,8 @@ Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web 
 
 ## Estructura del Repositorio
 
-mis-notas-js-css/
+```
+```mis-notas-js-css/
 ├── 01-curso-js-mircha/
 │   ├── 01-fundamentos-basicos/
 │   ├── 02-dom-manipulation/
@@ -55,3 +56,4 @@ mis-notas-js-css/
     ├── 11-pseudo-classes-and-pseudo-elements/
     ├── 12-transitions-and-transforms/
     └── 13-animations-and-keyframes/
+```
