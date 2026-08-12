@@ -2,7 +2,7 @@
 
 Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web con CSS (Curso AlexCG) y lógica de programación con JavaScript (Curso Mircha).
 
-## Modulo 1: CSS Course (AlexCG)
+## Modulo :1: CSS Course (AlexCG)
 
 - [ ] 01. Intro and Selectors
 - [ ] 02. Cascade, Specificity and BEM
@@ -22,8 +22,8 @@ Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web 
 
 - [x] 01. Fundamentos Basicos
 - [x] 02. DOM Manipulation
-- [ ] 03. Event Handling (En curso)
-- [ ] 04. BOM (Browser Object Model)
+- [x] 03. Event Handling (En curso)
+- [x] 04. BOM (Browser Object Model)
 - [ ] 05. AJAX y REST APIs
 - [ ] 06. SPA (Single Page Applications)
 - [ ] 07. Reactividad

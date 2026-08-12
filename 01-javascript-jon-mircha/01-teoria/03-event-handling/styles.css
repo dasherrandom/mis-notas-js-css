@@ -33,3 +33,21 @@
 .sepia {
   filter: sepia(1);
 }
+
+.eventos-flujos div {
+  padding: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.uno {
+  background-color: mediumpurple;
+}
+
+.dos {
+  background-color: #097;
+}
+
+.tres {
+  background-color: #09f;
+}

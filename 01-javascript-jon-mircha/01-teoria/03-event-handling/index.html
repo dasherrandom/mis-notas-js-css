@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de JS </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Curso de Javascript</h1>
+  <h2>Web APIS</h2>
+  <ul>
+    <li>Eventos</li>
+    <li>Forms</li>
+    <li>AJAX - Fetch</li>
+    <li>History</li>
+    <li>Web Storage</li>
+    <li>Geolocacion</li>
+    <li>Drag & Drop</li>
+    <li>Indexed DB</li>
+    <li>Canvas</li>
+    <li>MatchMedia</li>
+    <li>etc...</li>
+  </ul>
+  <br>
+  <hr>
+  <br>
+  <h3>Manejo del DOM</h3>
+  <p id = "que-es">lorem ipsum</p>
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Seccion #1</a></li>
+      <li><a href="#">Seccion #2</a></li>
+      <li><a href="#">Seccion #3</a></li>
+      <li><a href="#">Seccion #4</a></li>
+       <li><a href="#">Seccion #5</a></li> 
+    </ul>
+  </nav>
+  <input type="text" name="nombre" placeholder="Nombre">
+  <a style="background-color: #F7DF1E; color: #222" data-id= "1" href="prueba.html" class="link-dom" data-description="Document Object Model">DOM</a>
+  <section class="cards">
+    <figure class="card">
+      <img src="https://picsum.photos/id/9/400/400" alt="tech"> 
+      <figcaption>Tech</figcaption>  
+    </figure> 
+    <figure class="card">
+      <img src="https://picsum.photos/id/237/400/400" alt="animals"> 
+      <figcaption>Animal</figcaption>  
+    </figure> 
+    <figure class="card">
+      <img src="https://picsum.photos/id/1084/400/400" alt="animals"> 
+      <figcaption>Animals 2</figcaption>  
+    </figure> 
+  </section>
+  <br><br>
+  <!--Esto es una función JS que se ejecuta al ejecutarse el evento click en el botón-->
+  <button onclick="alert(`Hola, esto es un manejador de eventos desde un atributo onclick`)">Event Handler como atributo</button>
+  <br><br>
+  <button id="evento-semantico">Botón semántico</button>
+  <br><br>
+  <button id="evento-listener">Botón + addEventListener</button>
+  <br><br>
+  <button id="evento-parametros">Botón que acepta Parámetros en los eventos</button>
+  <br><br>
+  <button id="evento-remove">Eliminar Evento</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h4>Flujo de eventos</h4>
+  <section class="eventos-flujos">
+    <div class="uno">
+      1
+      <div class="dos">
+        2
+        <div class="tres">3 - Al estar dentro de 2 elementos con el mismo evento, este se propaga por ambos padres
+        <a href="https://github.com" target="_blank">Mi Github</a>
+        </div>
+      </div>
+    </div>
+  </section>    
+  <template id="jojos-template">
+    <figure>
+      <img>
+      <figcaption></figcaption>
+    </figure>
+  </template>
+</body>
+<script>
+</script>
+<script src="script.js"></script>
+</html>

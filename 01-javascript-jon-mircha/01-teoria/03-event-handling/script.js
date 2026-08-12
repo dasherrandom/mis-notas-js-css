@@ -78,3 +78,84 @@ function eliminarHandler() {
 
 // Al ejecutar el eliminarHandler, se elimina internamente el event handler de forma recursiva
 $eventoRemove.addEventListener("click", eliminarHandler)
+
+// ------------------------------------------------------
+
+// Clase #3 - Flujo de eventos
+// Cuando un eventio se origina se propaga a lo largo del DOM desde el elemento más pequeño hasta el mayor (el document). A esto se le llama burbuja.
+
+const $divEventos = document.querySelectorAll(".eventos-flujos div")
+
+
+function flujoEventos(e) {
+  console.log(`Hola te saluda ${this.className}, el click lo originó ${e.target.className}`);
+  e.stopPropagation()
+}
+
+// Aquí el evento se propaga del elemento que originó el evento hasta el más externo:
+// Si lo originó el elemento 3, el evento se va a propagar tambien por el 2 y el 1
+// Si lo originó el elemento 2, el evento se va a propagar tambien por el 1
+// Si lo originó el elemento 1, el evento no se va a propagar 
+
+// $divEventos.forEach(div => {
+// Fase de burbuja (no se especifíca el parámetro o lo dejas en false)
+// div.addEventListener("click", flujoEventos, false)
+// Fase de captura (el tercer parámetro debe ser true) --> Va desde el elemento más externo (en este caso el div uno), hasta el elemento que generó el evento.
+// div.addEventListener("click", flujoEventos, true)
+// También puedes pasar como tercer parámetro un objeto cuyas propiedades son:
+// capture: activa o desactiva el comportamiento de la fase de captura
+// once: activa o desactiva la opción que define cuantas veces se ejecuta dicho evento (una vez o más de una)
+// })
+
+// ------------------------------------------------------
+
+// Clase #4 - stopProgramation & preventDefault
+
+// stopPropagation permite evitar la propagación de un event Handler al momento de su ejecución (se le añadió a la función flujoEventos() dicho método para el evento).
+
+// Hay eventos por default en los elementos HTML, los cuales se pueden "prevenir"
+
+// $linkEventos = document.querySelector(".eventos-flujos a")
+//
+// $divEventos.forEach(div => {
+//   div.addEventListener("click", flujoEventos)
+// })
+//
+// $linkEventos.addEventListener("click", (e) => {
+//   alert("Estás a punto de asombrarte por mi Repo de Github")
+//   e.preventDefault() // -> Elimina el evento principal del enlace.
+// })
+
+// ------------------------------------------------------
+
+// Clase #5 - Delegación de eventos
+
+// Delega el evento al elemento padre. Optimiza la asignación de eventos.
+// Si tienes 1000 botones, en ves de asignarle 1000 eventos para los botones, le asignas el eventos click al elemento padre y que este valide quien es el que ejecutó el evento.
+
+document.addEventListener("click", (e) => {
+  console.log("Click en:", e.target)
+  const origen = e.target.className;
+
+  // Si el que originó el evento es este anchor especifícamente, hará esto
+  if (e.target.matches(".eventos-flujos a")) {
+    e.preventDefault()
+    alert("Estas a punto de asombrarte por mi Repo de Github")
+  }
+
+  // Tomando como diferencia la clase, aquí ejecutamos el código en base al div que originó el evento
+  switch (origen) {
+    case "uno":
+      console.log("Hola, soy uno")
+      break;
+    case "dos":
+      console.log("Hola, soy dos")
+      break;
+    case "tres":
+      console.log("Hola, soy tres")
+      break;
+    default:
+      console.log("Hola, técnicamente soy un random jeje")
+      break
+  }
+})
