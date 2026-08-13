@@ -1,0 +1,45 @@
+/* Combinador de descendientes */
+
+/* Selecciona CUALQUIER elemento que esté dentro del contenedor principal, sin importar qué tan profundo esté en el árbol DOM (hijos, nietos, etc.). */
+
+/* Selecciona los elementos con la clase lista que estén dentro de un elemento ul */
+.listas .lista {
+  text-decoration: underline;
+}
+
+.todo .lista {
+  list-style: decimal;
+}
+
+.dias .lista {
+  list-style: none;
+}
+
+/* Combinador de hijo directo */
+
+/* Modifica directamente a los hijos directos, ignora los elementos hijos de sus propios hijos */
+.listas>.lista {
+  list-style: upper-roman;
+}
+
+/* Modifica a los elementos .lista que son hijos directos de .dias */
+.dias>.lista {
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Combinador de hermano adyacente */
+/* Selecciona el hermano que le sigue al elemento en cuestión */
+
+/* Selecciona al siguiente elemento del elemento con lña clase .subtitulo*/
+
+/* .subtitulo+.parrafo { */
+/*   background-color: yellow; */
+/* } */
+
+/* Combinador de hermanos generales */
+/* Selecciona tooodo los hermanos siguientes con la clase parrafo del elemento .subtitulo */
+.subtitulo~.parrafo {
+  background-color: tomato;
+}

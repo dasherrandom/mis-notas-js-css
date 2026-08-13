@@ -1,0 +1,63 @@
+/* Clase #1 */
+/* Selectores CSS definen los elementos HTML que serán afectados por la regla */
+
+
+/* Selector Universal */
+/* Selecciona todos los elementos del documento */
+/* * { */
+/*   text-decoration: underline; */
+/* } */
+/* En los demás selectores hay un selector universal implícito */
+
+
+/* -> Selector de tipo */
+
+/* MOdifica al body */
+body {
+  font-family: Arial;
+}
+
+/* Todos los h2 se modificaran - No se usa mucho */
+
+li {
+  color: slateblue;
+  font-size: 20px;
+}
+
+/* -> Selector por clase */
+/* Selecciona a los elementos tomando en cuenta las clases de los mismos (atributo class) */
+
+/* Selecciona todos los elementos con la clase .peliculas */
+.peliculas {
+  color: crimson;
+}
+
+.series {
+  font-size: 40px;
+}
+
+.favoritas {
+  font-weight: bold;
+  color: rebeccapurple;
+  font-size: 25px;
+}
+
+
+.espaciado {
+  letter-spacing: 4px;
+}
+
+/* Selector por ID */
+/* Selecciona a los elementos basándose en los IDS (no se recomienda mucho, le quita la reutilización del código por ser estilos únicos de un elemento) */
+
+#spidermanBrandNewDay {
+  font-size: 25px;
+  color: tomato;
+  text-decoration: underline;
+}
+
+
+#temporada3 {
+  color: seagreen;
+  text-decoration: underline;
+}

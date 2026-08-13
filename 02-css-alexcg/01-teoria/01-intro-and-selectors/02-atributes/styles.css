@@ -1,0 +1,41 @@
+/* Selector de atributo */
+/* Añade estilos en base a los atributos de los elementos */
+
+/* Selecciona a todos los elementos con el atributo class */
+/* [class] { */
+/*   background-color: tomato; */
+/* } */
+
+/* [type] { */
+/*   background-color: mediumpurple; */
+/* } */
+
+[value] {
+  display: block;
+  width: 90%;
+  margin-top: 20px;
+}
+
+/* La virguilla actúa como un filtro para buscar específicamente el valor (debe estar separado, ojo) */
+[value~="Aquí"] {
+  background-color: yellow;
+}
+
+[type="submit"] {
+  background-color: yellow;
+}
+
+/* Selecciona el elemento si el valor del atributo COMIENZA exactamente con ese texto (no necesita ser una palabra completa, evalúa los caracteres). */
+[value^="Aquí"] {
+  padding: 5px;
+}
+
+/* El $ seleccionará siempre y cuando el valor se encuntré al final del atributo */
+[value$="email"] {
+  background-color: white;
+}
+
+/* Seleccionará siempre los elementos cuyo valor de atributo contenga el valor especificado, ya sea separado, al final, al inicio, etc */
+[value*="q"] {
+  background-color: tomato;
+}

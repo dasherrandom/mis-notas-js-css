@@ -1,0 +1,65 @@
+/* Una característica de CSS es la cascada */
+/* Es una manera de aplicar o definir que selectores le aplican un estilo a un elemento en caso de haber varios selectores para este mismo */
+
+/* h1 { */
+/*   color: royalblue; */
+/*   font-family: Arial; */
+/* } */
+
+/* h1 { */
+/*   color: crimson; */
+/*   font-family: cursive; */
+/* } */
+
+/* h1 { */
+/*   color: seagreen; */
+/*   color: black; */
+/* } */
+
+/* El último estilo declarado será el que se tome */
+
+/* La especificidad es la importancia que tendrá un selector para aplicar dichas propiedades */
+
+/* A pesar de la cascada, el selector de clase tiene mayor especificidad que el selector de tipo */
+
+/* Se compara de izquierda a derecha. Un ID (0,1,0) siempre le gana a infinitas clases (0,0,X) */
+/* - Type/Element: (0,0,1) */
+/* - Class/Attribute/Pseudo-class: (0,1,0) */
+/* - ID Selector: (1,0,0) */
+/* - Inline Styles: Gana a todos en el HTML */
+
+/* .title { */
+/*   color: #000; */
+/*   font-family: Arial; */
+/* } */
+
+/* h1 { */
+/*   color: tomato; */
+/* } */
+
+/* #title { */
+/*   color: rebeccapurple; */
+/*   /* Tiene mayor especificad que los anteriores */
+/* } */
+
+/* h1 { */
+/*   color: #097 !important; -> El !important va arriba de todo, pero es poco confiable o no es práctico usarlo */
+/* } */
+
+
+/* La herencia es la característica de heredar los estilos a los hijos */
+body {
+  font-family: Arial;
+  border: 3px solid orange;
+  color: steelblue;
+}
+
+input {
+  font-size: 25px;
+  /* Los  inputs no puees heredar el color */
+}
+
+.title {
+  border: inherit;
+  /* El valor inherit establece que este valor lo va a heredar del valor que contenga esta propiedad de su padre */
+}
