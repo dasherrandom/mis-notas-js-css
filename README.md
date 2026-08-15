@@ -6,7 +6,7 @@ Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web 
 
 - [x] 01. Intro and Selectors
 - [x] 02. Cascade, Specificity and BEM
-- [ ] 03. Box Model and Display
+- [x] 03. Box Model and Display
 - [ ] 04. Borders, Shadows and Backgrounds
 - [ ] 05. Typography and CSS Units
 - [ ] 06. Position Property

@@ -1,0 +1,112 @@
+* {
+  /* El bordeer-box nops permitirá manjera el padding, y border sin aumentar el tamañop de los elementos a los cuales aplicaremos estas propiedades del Box Model */
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: mediumpurple;
+  padding: 10px 20px;
+}
+
+.header__title {
+  color: white;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  /* Cuando un elemento tiene un width definido y un display block, pueden automatizar los márgenes horizontales (centra el elemento) */
+}
+
+.main {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+
+.main__tittle {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.main2 {
+  background-color: darkgray;
+}
+
+.main__container {
+  color: black;
+  border-radius: 10px;
+  width: 280px;
+  margin-right: 25px;
+  /* El display inline-block permite tener un elemento que se comporte como inline pero permitiendo usar las propidades del Box Model sin algún tipo de bug */
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+}
+
+.main__img {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.main__subtittle {
+  margin: 15px 0 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+
+
+.main__link {
+  /* Va a heredar el color de fondo del padre (la card container) */
+  background-color: inherit;
+  border: purple 2px solid;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: purple;
+  font-weight: bold;
+  border-radius: 45px;
+}
+
+
+.main__paragraph {
+  margin-bottom: 20px;
+}
+
+
+.main__container--second {
+  width: 40%;
+  padding: 40px;
+}
+
+.main--second {
+  background-color: ghostwhite;
+  padding-bottom: 50px;
+}
+
+.main__link--second {
+  color: blue;
+  border-color: blue;
+}
+
+.footer {
+  background-color: lightgray;
+  padding: 10px 20px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: dimgray;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
