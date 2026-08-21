@@ -1,0 +1,149 @@
+:root {
+  --yellow-js: #F0DB4F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--yellow-js);
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.button__svg {
+  height: 40px;
+}
+
+.header {
+  background-color: var(--yellow-js);
+  padding: 10px;
+  text-align: center;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 5px;
+}
+
+.section--start {
+  /* El calc lleva obligatoriamente espacios xd */
+  min-height: calc(100vh - 46px);
+}
+
+.section__title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu {
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s opacity ease,
+    visibility 0.5s ease;
+  width: 100%;
+}
+
+.menu--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__link {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  height: 150px;
+  text-align: center;
+  border-bottom: 2px white solid;
+  transition: 0.5s ease;
+}
+
+.menu__item:hover {
+  background-color: var(--yellow-js);
+}
+
+.section__clock {
+  color: red;
+  font-size: 8rem;
+  height: 60vh;
+  padding: 100px;
+  text-align: center;
+  margin: 100px 0;
+  opacity: 0;
+  transition: .3s ease all;
+}
+
+.section__actions {
+  text-align: center;
+}
+
+.section__button {
+  margin-right: 10px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  transition: .3s ease all;
+}
+
+.section__clock--move {
+  opacity: 1;
+}
+
+#start_clock,
+#start_alarm {
+  background-color: limegreen;
+}
+
+#stop_alarm,
+#stop_clock {
+  color: red;
+  border: solid 1px red;
+  background-color: inherit;
+}
+
+.section__button:disabled {
+  opacity: 0.3;
+}
+
+.section__map {
+  margin-top: 60px;
+  margin: 100px auto 0;
+  height: 70vh;
+  width: 70%;
+  background-color: dimgray;
+  position: relative;
+}
+
+.section__circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--yellow-js);
+  border-radius: 50px;
+  position: absolute;
+}
