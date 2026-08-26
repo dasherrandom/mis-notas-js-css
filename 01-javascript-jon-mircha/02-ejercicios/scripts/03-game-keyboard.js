@@ -5,10 +5,6 @@ let y = 0;
 let limiteX = $map.offsetWidth - $circle.offsetWidth
 let limiteY = $map.offsetHeight - $circle.offsetHeight
 
-console.log($circle.offsetWidth)
-
-console.log(limiteX, limiteY)
-
 window.addEventListener("resize", () => {
   limiteX = $map.offsetWidth - $circle.offsetWidth;
   limiteY = $map.offsetHeight - $circle.offsetHeight;

@@ -13,15 +13,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.controls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .button {
   cursor: pointer;
   background-color: var(--yellow-js);
   padding: 10px;
   border: none;
   border-radius: 50%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
   margin: 10px;
 }
 
@@ -146,4 +149,34 @@ html {
   background-color: var(--yellow-js);
   border-radius: 50px;
   position: absolute;
+}
+
+.section__countdown {
+  height: 60vh;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 300px;
+}
+
+.section__countdown h4 {
+  font-size: 2rem;
+}
+
+.section__time span {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 3rem;
+  text-shadow: 0 0 20px blue;
+}
+
+.button-arrow {
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease all;
+}
+
+.button-arrow-active {
+  visibility: visible;
+  opacity: 1;
 }
