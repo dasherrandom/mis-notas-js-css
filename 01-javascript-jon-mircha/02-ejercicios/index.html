@@ -9,36 +9,38 @@
 </head>
 
 <body>
-
   <header class="header">
     <h1>Ejercicios de JS - DOM</h1>
   </header>
-  <section id="section1" class="section section--start">
-    <h3 class="section__title">Ejercicio 1 - Menú de hamburguesa</h3>
-  </section>
-  <section class="section" id="section2">
-    <h3 class="section__title">Ejercicio 2 - Reloj Digital + Alarma Sonora</h3>
-    <h4 class="section__clock"></h4>
-    <div class="section__actions">
-      <button class="section__button" id="start_clock">Iniciar Reloj</button>
-      <button class="section__button" id="stop_clock">Detener Reloj</button>
-      <button class="section__button" id="start_alarm">Iniciar Alarma</button>
-      <button class="section__button" id="stop_alarm">Detener Alarma</button>
-    </div>
-  </section>
-  <section class=" section" id="section3">
-    <h3 class="section__title">Ejercicio 3 - Eventos del Teclado</h3>
-    <div class="section__map" id="map">
-      <div class="section__circle" id="circle"></div>
-    </div>
-  </section>
-  <section class="section" id="section4">
-    <h3 class="section__title">Ejercicio 4 - Countdown Fin de Año 2026</h3>
-    <div class="section__countdown"></div>
-  </section>
-  <section class="section" id="section5">
-    <h3 class="section__title">Ejercicio 5</h3>
-  </section>
+  <main>
+    <section id="section1" class="section section--start">
+      <h3 class="section__title">Ejercicio 1 - Menú de hamburguesa</h3>
+    </section>
+    <section class="section" id="section2">
+      <h3 class="section__title">Ejercicio 2 - Reloj Digital + Alarma Sonora</h3>
+      <h4 class="section__clock"></h4>
+      <div class="section__actions">
+        <button class="section__button" id="start_clock">Iniciar Reloj</button>
+        <button class="section__button" id="stop_clock">Detener Reloj</button>
+        <button class="section__button" id="start_alarm">Iniciar Alarma</button>
+        <button class="section__button" id="stop_alarm">Detener Alarma</button>
+      </div>
+    </section>
+    <section class=" section" id="section3">
+      <h3 class="section__title">Ejercicio 3 - Eventos del Teclado</h3>
+      <div class="section__map" id="map">
+        <div class="section__circle" id="circle"></div>
+      </div>
+    </section>
+    <section class="section" id="section4">
+      <h3 class="section__title">Ejercicio 4 - Countdown Fin de Año 2026</h3>
+      <div class="section__countdown"></div>
+    </section>
+    <section class="section" id="section5">
+      <h3 class="section__title">Ejercicio 5 - MediaQueries en JS</h3>
+      <article class="section__contentMQ" id="content-MQ"></article>
+    </section>
+  </main>
   <nav class="section menu">
     <ul class="menu__list">
       <li class="menu__item">
@@ -51,14 +53,17 @@
         <a href="#section3" class="menu__link">Eventos del teclado</a>
       </li>
       <li class="menu__item">
-        <a href="#section4" class="menu__link">Ejercicio 4</a>
+        <a href="#section4" class="menu__link">Countdown - Año Nuevo</a>
       </li>
       <li class="menu__item">
-        <a href="#section5" class="menu__link">Ejercicio 5</a>
+        <a href="#section5" class="menu__link">MediaQueries en JS</a>
       </li>
     </ul>
   </nav>
   <div class="controls">
+    <button class="button button-oscure">
+      <img src="img/dark-theme-icon.png" class="button__svg">
+    </button>
     <button class="button button-arrow">
       <img src="img/up-arrow-alt-svgrepo-com.svg" class="button__svg">
     </button>
@@ -67,8 +72,6 @@
     </button>
   </div>
   <script type="module" src="script.js"></script>
-  <script src="scripts/02-clock-digital.js"></script>
-  <script src="scripts/03-game-keyboard.js"></script>
 </body>
 
 </html>

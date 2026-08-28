@@ -1,5 +1,9 @@
 :root {
   --yellow-js: #F0DB4F;
+  --bg-dark: #121212;
+  --text-dark: #F0F0F0;
+  --bg-clear: #fff;
+  --text-clear: #000;
 }
 
 * {
@@ -7,6 +11,17 @@
   margin: 0;
   padding: 0;
   font-family: Arial;
+}
+
+main {
+  background-color: var(--bg-clear);
+  color: var(--text-clear);
+  transition: .5s ease all;
+}
+
+.main-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark)
 }
 
 html {
@@ -104,6 +119,7 @@ html {
 }
 
 .section__button {
+  cursor: pointer;
   margin-right: 10px;
   font-size: 1rem;
   padding: 10px 15px;
@@ -179,4 +195,24 @@ html {
 .button-arrow-active {
   visibility: visible;
   opacity: 1;
+}
+
+
+.section__contentMQ {
+  padding-top: 50px;
+}
+
+.section__contentMQ iframe {
+  display: block;
+  width: 50%;
+  margin: 10px auto 0;
+}
+
+.section__contentMQ a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--yellow-js);
 }
