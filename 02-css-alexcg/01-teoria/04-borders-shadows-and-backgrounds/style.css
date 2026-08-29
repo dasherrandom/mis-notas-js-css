@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkseagreen;
+}
+
+.notebook {
+  width: 300px;
+  height: 400px;
+  background-color: cornflowerblue;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px white,
+    20px 20px rgb(0, 0, 0, 0.2);
+  padding: .1px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+  /* Box Shadow implica una copia del objeto (tanto su width como su height), definiendo su posicion en x, y, su desenfoque, su crecimiento y su color (por defecto es inherit) */
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px, 0 360px;
+  padding: .1px;
+}
+
+.line {
+  width: 32px;
+  height: 8px;
+  border-radius: 10px;
+  margin-left: -20px;
+  margin-top: 3px;
+  background-color: darkgreen;
+  color: darkgreen;
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px, 0 360px;
+}
