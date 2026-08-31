@@ -1,16 +1,20 @@
 export function theme(classElement) {
-  const $main = document.querySelector(`main`)
+  const $main = document.querySelectorAll(`[data-dark]`)
   const $button = document.querySelector(`.${classElement}`)
   console.log(localStorage.getItem("theme"))
   if (localStorage.getItem("theme") == null) {
     localStorage.setItem("theme", "light")
   }
   function lightMode() {
-    $main.classList.remove("main-dark")
+    $main.forEach(elemento => {
+      elemento.classList.remove("dark")
+    })
     localStorage.setItem("theme", "light")
   }
   function darkMode() {
-    $main.classList.add("main-dark")
+    $main.forEach(elemento => {
+      elemento.classList.add("dark");
+    })
     localStorage.setItem("theme", "dark")
   }
   if (localStorage.getItem("theme") == "light") {

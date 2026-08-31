@@ -12,7 +12,7 @@
   <header class="header">
     <h1>Ejercicios de JS - DOM</h1>
   </header>
-  <main>
+  <main data-dark>
     <section id="section1" class="section section--start">
       <h3 class="section__title">Ejercicio 1 - Menú de hamburguesa</h3>
     </section>
@@ -40,6 +40,26 @@
       <h3 class="section__title">Ejercicio 5 - MediaQueries en JS</h3>
       <article class="section__contentMQ" id="content-MQ"></article>
     </section>
+    <section class="section" id="section6">
+      <h3 class="section__title">Ejercicio 6 - Responsive Tester</h3>
+
+      <form id="form" class="section__form" data-dark>
+        <h2 class="form_title">Responsive Tester</h2>
+        <div class="form__group">
+          <label for="">URL de la nueva ventana:</label>
+          <input type="text" id="url" placeholder="Ejm: https://github.com/dasherrandom">
+        </div>
+        <div class="form__group">
+          <label for="">Ancho de la ventana:</label>
+          <input type="number" id="width" placeholder="Ejm: 900px">
+        </div>
+        <div class="form__group">
+          <label for="">Alto de la ventana:</label>
+          <input type="number" id="height" placeholder="Ejm: 700px">
+        </div>
+        <input type="submit" class="form__submit">
+      </form>
+    </section>
   </main>
   <nav class="section menu">
     <ul class="menu__list">
@@ -58,6 +78,10 @@
       <li class="menu__item">
         <a href="#section5" class="menu__link">MediaQueries en JS</a>
       </li>
+      <li class="menu__item">
+        <a href="#section6" class="menu__link">Responsive Tester</a>
+      </li>
+
     </ul>
   </nav>
   <div class="controls">

@@ -2,7 +2,7 @@
   --yellow-js: #F0DB4F;
   --bg-dark: #121212;
   --text-dark: #F0F0F0;
-  --bg-clear: #fff;
+  --bg-clear: #f0f0f0;
   --text-clear: #000;
 }
 
@@ -19,9 +19,9 @@ main {
   transition: .5s ease all;
 }
 
-.main-dark {
+main.dark {
   background-color: var(--bg-dark);
-  color: var(--text-dark)
+  color: var(--text-dark);
 }
 
 html {
@@ -215,4 +215,57 @@ html {
   font-size: 1.3rem;
   text-decoration: none;
   color: var(--yellow-js);
+}
+
+.section__form {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 200px auto 0;
+  box-shadow: 2px 4px 10px 2px rgb(0, 0, 0, 0.2);
+  transition: .5s ease all;
+}
+
+.form_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__group label,
+.form__group input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form__group input {
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  padding: 6px;
+}
+
+.form__submit {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--yellow-js);
+  color: var(--bg-dark);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.section__form.dark {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--yellow-js);
+  color: var(--text-dark);
+}
+
+.section__form.dark input:not([type=submit]) {
+  background-color: #222;
+  border: none;
+  color: var(--text-dark);
 }

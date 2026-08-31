@@ -5,6 +5,7 @@ import { countdown } from "/scripts/04-countdown.js";
 import { scrollTop } from "/scripts/05-button-scroll.js"
 import { theme } from "./scripts/06-mode-obscure.js";
 import { contentResponsive } from "./scripts/07-content-responsive.js";
+import { responsiveTester } from "./scripts/08-responsive-tester.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu("button-burger", "menu")
@@ -23,4 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
   <a href=https://www.youtube.com/embed/aNeEreY5yIY?si=a5_T67OPEwi17PFx>Playlist para programar (por alguna razón tiene a Mr. Robot)</a>
 
   `)
+  responsiveTester("form", "height", "width", "url")
 })
