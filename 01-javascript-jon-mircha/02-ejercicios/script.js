@@ -6,6 +6,7 @@ import { scrollTop } from "/scripts/05-button-scroll.js"
 import { theme } from "./scripts/06-mode-obscure.js";
 import { contentResponsive } from "./scripts/07-content-responsive.js";
 import { responsiveTester } from "./scripts/08-responsive-tester.js";
+import { userAgent } from "./scripts/09-user-agent.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu("button-burger", "menu")
@@ -25,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   `)
   responsiveTester("form", "height", "width", "url")
+  userAgent("section__userAgent")
 })
