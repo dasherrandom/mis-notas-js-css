@@ -15,6 +15,7 @@ export function theme(classElement) {
     $main.forEach(elemento => {
       elemento.classList.add("dark");
     })
+
     localStorage.setItem("theme", "dark")
   }
   if (localStorage.getItem("theme") == "light") {

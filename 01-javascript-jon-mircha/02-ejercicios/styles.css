@@ -283,3 +283,22 @@ html {
   display: block;
   width: 400px;
 }
+
+.section__statusNetwork {
+  text-align: center;
+  margin-top: 300px;
+  padding: 20px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.status--connect {
+  background-color: #28A745;
+}
+
+.status--disconnect {
+  background-color: #DC3545;
+}
