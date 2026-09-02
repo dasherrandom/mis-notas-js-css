@@ -65,6 +65,7 @@ html {
 
 .section__title {
   margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -286,7 +287,7 @@ html {
 
 .section__statusNetwork {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
   padding: 20px;
 }
 
@@ -301,4 +302,12 @@ html {
 
 .status--disconnect {
   background-color: #DC3545;
+}
+
+#section9 {
+  text-align: center;
+}
+
+video {
+  margin-top: 20px;
 }

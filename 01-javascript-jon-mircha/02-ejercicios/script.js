@@ -8,6 +8,7 @@ import { contentResponsive } from "./scripts/07-content-responsive.js";
 import { responsiveTester } from "./scripts/08-responsive-tester.js";
 import { userAgent } from "./scripts/09-user-agent.js";
 import { statusNetwork } from "./scripts/10-network-status.js";
+import { detectWebcam } from "./scripts/11-detection-webcam.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu("button-burger", "menu")
@@ -29,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
   responsiveTester("form", "height", "width", "url")
   userAgent("section__userAgent")
   statusNetwork("status")
+  detectWebcam("video")
 })
