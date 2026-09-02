@@ -8,7 +8,7 @@ Repositorio centralizado para el seguimiento del aprendizaje en maquetacion web 
 - [x] 02. Cascade, Specificity and BEM
 - [x] 03. Box Model and Display
 - [x] 04. Borders, Shadows and Backgrounds
-- [ ] 05. Typography and CSS Units
+- [x] 05. Typography and CSS Units
 - [ ] 06. Position Property
 - [ ] 07. Responsive Design and Media Queries
 - [ ] 08. Flexbox Layout
