@@ -311,3 +311,20 @@ html {
 video {
   margin-top: 20px;
 }
+
+.section__location {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section__location a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: var(--yellow-js);
+  color: #000;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}

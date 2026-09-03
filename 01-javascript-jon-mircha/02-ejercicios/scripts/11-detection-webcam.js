@@ -1,5 +1,6 @@
 export function detectWebcam(IDElement) {
   const $video = document.getElementById(IDElement);
+  console.log($video)
   navigator.mediaDevices.getUserMedia({ video: true })
     .then((source) => {
       $video.srcObject = source;

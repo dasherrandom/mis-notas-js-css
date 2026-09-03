@@ -9,6 +9,7 @@ import { responsiveTester } from "./scripts/08-responsive-tester.js";
 import { userAgent } from "./scripts/09-user-agent.js";
 import { statusNetwork } from "./scripts/10-network-status.js";
 import { detectWebcam } from "./scripts/11-detection-webcam.js";
+import { geolocation } from "./scripts/12-geolocation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu("button-burger", "menu")
@@ -31,4 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
   userAgent("section__userAgent")
   statusNetwork("status")
   detectWebcam("video")
+  geolocation("section__location")
 })
